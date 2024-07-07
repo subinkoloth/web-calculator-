@@ -1,0 +1,126 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* main body */
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #e3e4e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#headingname {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  color: #22252d;
+  top: 80px;
+  left: 150px;
+}
+
+.calbody {
+  border-radius: 20px;
+  width: 300px;
+  height: 600px;
+  background-color: #22252d;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* diplay portion */
+
+.caldisplay {
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 230px;
+  background-color: #292d36;
+}
+.textcal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#inputtext {
+  font-size: 32px;
+  margin-left: 50px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: #292d36;
+  box-sizing: border-box;
+  padding: 5px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  width: 300px;
+  text-align: right;
+  unicode-bidi: bidi-override;
+  text-align: right;
+  direction: ltr;
+  padding-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.textout {
+  text-align: right;
+  width: 100%;
+  position: absolute;
+  text-decoration: solid;
+  bottom: 50px;
+  right: 0;
+  color: rgb(248, 166, 15);
+  font-size: 43px;
+  padding-right: 10px;
+  font-family: "Open Sans", sans-serif;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+  white-space: nowrap;
+  overflow: auto;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+/* button portion */
+
+.buttonbody {
+  position: relative;
+  top: -50;
+  color: #292d36;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 370px;
+  border-top-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.btnrow {
+  margin: 0;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btnrow button {
+  background-color: #272b33;
+  color: #25efd3;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btnrow button:last-child {
+  color: #e26463;
+}
+button:hover {
+  background-color: #353943;
+}
+button:active {
+  background-color: #4b505e;
+}
