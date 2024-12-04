@@ -54,12 +54,17 @@ body {
   padding: 10px;
   box-sizing: border-box;
   white-space: nowrap; /* Prevent wrapping */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  
+  /* For hiding scrollbar */
+  overflow-x: auto;
 }
 
 .textout::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Webkit browsers */
+  display: none; /* Hide scrollbar in WebKit browsers */
+}
+
+.textout {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
 
 .textcal {
@@ -80,11 +85,13 @@ body {
   white-space: nowrap; /* Prevent wrapping */
   padding: 10px;
   box-sizing: border-box;
+
+  /* For hiding scrollbar */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
 
 #inputtext::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Webkit browsers */
+  display: none; /* Hide scrollbar in WebKit browsers */
 }
 
 /* button portion */
