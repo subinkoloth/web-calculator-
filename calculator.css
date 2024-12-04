@@ -5,7 +5,6 @@ body {
 }
 
 /* main body */
-
 .main {
   width: 100%;
   height: 100%;
@@ -14,12 +13,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 #headingname {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   position: absolute;
   color: #22252d;
   top: 80px;
   left: 150px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .calbody {
@@ -30,8 +31,7 @@ body {
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* diplay portion */
-
+/* display portion */
 .caldisplay {
   position: relative;
   border-top-left-radius: 20px;
@@ -39,54 +39,55 @@ body {
   width: 100%;
   height: 230px;
   background-color: #292d36;
+  display: flex;
+  flex-direction: column; /* Stack result and input fields vertically */
+  justify-content: flex-end; /* Align them towards the bottom */
+  overflow: hidden; /* Prevent overflow outside the calculator body */
 }
+
+.textout {
+  text-align: right; /* Align result to the right */
+  width: 100%;
+  color: rgb(248, 166, 15);
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.textout::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
 .textcal {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  width: 100%;
 }
+
 #inputtext {
   font-size: 32px;
-  margin-left: 50px;
   height: 60px;
   border: none;
   outline: none;
   background-color: #292d36;
-  box-sizing: border-box;
-  padding: 5px;
   color: white;
-  font-family: "Open Sans", sans-serif;
-  width: 300px;
-  text-align: right;
-  unicode-bidi: bidi-override;
-  text-align: right;
-  direction: ltr;
-  padding-right: 10px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.textout {
-  text-align: right;
+  font-family: "Poppins", sans-serif;
   width: 100%;
-  position: absolute;
-  text-decoration: solid;
-  bottom: 50px;
-  right: 0;
-  color: rgb(248, 166, 15);
-  font-size: 43px;
-  padding-right: 10px;
-  font-family: "Open Sans", sans-serif;
-  overflow: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: 0;
-  white-space: nowrap;
-  overflow: auto;
-  white-space: nowrap;
+  text-align: right; /* Align input text to the right */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  padding: 10px;
   box-sizing: border-box;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+#inputtext::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
 }
 
 /* button portion */
-
 .buttonbody {
   position: relative;
   top: -50;
@@ -98,12 +99,14 @@ body {
   border-top-left-radius: 15px;
   border-top-left-radius: 15px;
 }
+
 .btnrow {
   margin: 0;
   margin-top: 15px;
   display: flex;
   justify-content: space-evenly;
 }
+
 .btnrow button {
   background-color: #272b33;
   color: #25efd3;
@@ -112,15 +115,20 @@ body {
   padding: 10px;
   width: 50px;
   height: 50px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
 }
+
 .btnrow button:last-child {
   color: #e26463;
 }
+
 button:hover {
-  background-color: #353943;
+  transform: scale(1.05);
+  background-color: #494949; /* Slightly brighter shade */
+  box-shadow: 0px 4px 15px rgba(76, 175, 80, 0.2);
 }
+
 button:active {
   background-color: #4b505e;
 }
